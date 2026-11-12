@@ -1,0 +1,147 @@
+{
+  "label": "SAMPLE",
+  "notice": "Invented demonstration records only. Not live prices, verified facilities, village-specific distances, or real predictions.",
+  "units": {
+    "money": "INR",
+    "quantity": "quintal",
+    "price": "INR per quintal",
+    "distance": "km"
+  },
+  "distanceBasis": "Illustrative road distances from a fictional sample village; not from the farmer's entered village or PIN.",
+  "sellingAssumptions": {
+    "trader": {
+      "priceFactor": 0.9,
+      "transportPerQuintal": 0,
+      "commissionRate": 0,
+      "spoilageRate": 0,
+      "waitingPerQuintal": 0,
+      "cashDays": 0
+    },
+    "mandi": {
+      "priceFactor": 1,
+      "transportPerQuintal": 90,
+      "commissionRate": 0.02,
+      "spoilageRate": 0.01,
+      "waitingPerQuintal": 0,
+      "cashDays": 1
+    },
+    "pool": {
+      "priceFactor": 1.06,
+      "transportPerQuintal": 40,
+      "commissionRate": 0.01,
+      "spoilageRate": 0.01,
+      "waitingPerQuintal": 20,
+      "cashDays": 3
+    },
+    "warehouse": {
+      "priceFactor": 1.2,
+      "transportPerQuintal": 60,
+      "commissionRate": 0.02,
+      "spoilageRate": 0.005,
+      "waitingPerQuintal": 75,
+      "cashDays": 2
+    },
+    "warehouseEligibleCrops": ["wheat", "paddy"],
+    "warehouseSaleDays": 30,
+    "receiptLoanAdvanceRate": 0.65,
+    "receiptLoanInterestRate": 0.01,
+    "switchingFeesKnown": false
+  },
+  "crops": [
+    {
+      "id": "tomato",
+      "nameKey": "tomato",
+      "samplePricePerQuintal": 1800,
+      "forecast": {
+        "daysAhead": 7,
+        "low": 1400,
+        "expected": 1800,
+        "high": 2200,
+        "confidenceNoteKey": "sampleForecastConfidence"
+      }
+    },
+    {
+      "id": "onion",
+      "nameKey": "onion",
+      "samplePricePerQuintal": 2200,
+      "forecast": {
+        "daysAhead": 7,
+        "low": 1800,
+        "expected": 2200,
+        "high": 2600,
+        "confidenceNoteKey": "sampleForecastConfidence"
+      }
+    },
+    {
+      "id": "potato",
+      "nameKey": "potato",
+      "samplePricePerQuintal": 1500,
+      "forecast": {
+        "daysAhead": 7,
+        "low": 1200,
+        "expected": 1500,
+        "high": 1800,
+        "confidenceNoteKey": "sampleForecastConfidence"
+      }
+    },
+    {
+      "id": "wheat",
+      "nameKey": "wheat",
+      "samplePricePerQuintal": 2400,
+      "forecast": {
+        "daysAhead": 7,
+        "low": 2200,
+        "expected": 2400,
+        "high": 2600,
+        "confidenceNoteKey": "sampleForecastConfidence"
+      }
+    },
+    {
+      "id": "paddy",
+      "nameKey": "paddy",
+      "samplePricePerQuintal": 2100,
+      "forecast": {
+        "daysAhead": 7,
+        "low": 1900,
+        "expected": 2100,
+        "high": 2300,
+        "confidenceNoteKey": "sampleForecastConfidence"
+      }
+    }
+  ],
+  "mandis": [
+    { "id": "sample-mandi-1", "name": "SAMPLE Mandi 1", "distanceKm": 12 },
+    { "id": "sample-mandi-2", "name": "SAMPLE Mandi 2", "distanceKm": 28 },
+    { "id": "sample-mandi-3", "name": "SAMPLE Mandi 3", "distanceKm": 45 },
+    { "id": "sample-mandi-4", "name": "SAMPLE Mandi 4", "distanceKm": 67 }
+  ],
+  "warehouses": [
+    { "id": "sample-warehouse-1", "name": "SAMPLE Warehouse 1", "distanceKm": 8 },
+    { "id": "sample-warehouse-2", "name": "SAMPLE Warehouse 2", "distanceKm": 21 },
+    { "id": "sample-warehouse-3", "name": "SAMPLE Warehouse 3", "distanceKm": 36 }
+  ],
+  "fpos": [
+    { "id": "sample-fpo-1", "name": "SAMPLE FPO 1", "distanceKm": 10 },
+    { "id": "sample-fpo-2", "name": "SAMPLE FPO 2", "distanceKm": 24 }
+  ],
+  "sampleReporters": [
+    {
+      "id": "sample-reporter-trader",
+      "phone": "+910000000001",
+      "role": "trader",
+      "displayName": "SAMPLE Trader 1"
+    },
+    {
+      "id": "sample-reporter-shopkeeper",
+      "phone": "+910000000002",
+      "role": "shopkeeper",
+      "displayName": "SAMPLE Shopkeeper 1"
+    },
+    {
+      "id": "sample-reporter-trader-2",
+      "phone": "+910000000003",
+      "role": "trader",
+      "displayName": "SAMPLE Trader 2"
+    }
+  ]
+}
